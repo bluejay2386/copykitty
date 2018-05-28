@@ -1,0 +1,7 @@
+[package]
+name = "copykitty"
+version = "1.0.0"
+authors = ["bluejay2386"]
+
+[dependencies]
+colored = "1.6"
