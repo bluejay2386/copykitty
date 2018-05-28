@@ -15,3 +15,4 @@ I do plan to add some extra functionality as I get better at Rust.
  + copy the binary to the directory /etc/update-motd.d/
  + test the program with run-parts /etc/update-motd.d/ --test and run-parts /etc/update-motd.d/
  + This program depends on GNU df, hostname, uname, and Rust. 
+ + These instuctions likely work for most Debian/Ubuntu based systems and will be different for other machines
