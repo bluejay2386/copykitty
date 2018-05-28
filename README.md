@@ -1,6 +1,8 @@
 # copykitty
 Pretty portable MOTD
 
+![screenshot of output](https://i.redditmedia.com/OAyJJ1VyD981CWU6n7evGaq-nN-MKHtAZBk6V5jUeuY.png?s=9443169114d152e2acd860b2fbf70341)
+
 This is a project that I created to help learn Rust, so the code quality probably isn't great.
 
 It's meant to be pretty portable. It relies on GNU df, uname, and hostname all existing on the target computer. It also relies on the file /etc/os-release existing and containing at least PRETTY_NAME="distro name"
