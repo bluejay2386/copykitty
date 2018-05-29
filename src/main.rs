@@ -13,6 +13,7 @@ fn main() {
     println!("\n");
     disk_list();
     up_time();
+    pi_hole();
 }
 
 fn disk_list() {
@@ -140,4 +141,12 @@ fn read_os_file(file_name: String) -> std::io::Result<String> {
 fn up_time() {
     let output = Command::new("uptime").arg("-p").output().expect("Failed to execute process!");
     println!("{}", String::from_utf8_lossy(&output.stdout).underline());
+}
+
+fn pi_hole() {
+    let status = Command::new("which").arg("pihole").status().expect("Failed to execute process!");
+    if status.success() {
+	let output = Command::new("pihole").arg("status").output().expect("Failed to execute process!");
+	println!("{}", String::from_utf8_lossy(&output.stdout));
+    }
 }
